@@ -12,6 +12,7 @@ This directory contains a News Aggregator Application, which is a Python-based (
 3. PostgreSQL
 
 # How to start the app
+## On localhost
 1. Setup your PostgreSQL db and ensure it is up
 2. Create a .env file with the following
 ```
@@ -28,6 +29,23 @@ SECRET_KEY=''
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
+```
+## Using Docker
+1. Setup your PostgreSQL db and ensure it is up
+2. Create a .env file with the following
+```
+POSTGRES_DB=
+POSTGRES_USER=
+POSTGRES_PASSWORD=''
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+NEWS_API_KEY=''
+SECRET_KEY=''
+```
+3. Ensure Docker is up and running. Use the following commands to start the app
+```
+docker build -t news .
+docker run --name news-app -p 8000:8000 -d news
 ```
 
 # Output
