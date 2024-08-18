@@ -9,3 +9,13 @@ This directory contains a News Aggregator Application, which is a Python-based (
 # Technology Stack
 1. Python - Django
 2. HTML, CSS, Javascript
+
+# Output
+## Home page
+![](_docs/images/home.png)
+
+## fetch_article page
+![](_docs/images/fetch_article.png)
+
+## mobile-responsive page
+![](_docs/images/mobile.png)
